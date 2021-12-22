@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./carrousel.css">
+    <title>Carousel</title>
+</head>
+<body>
+    <h1 class="title">Carrousel Nativo de JS</h1>
+
+    <div class="main-container">
+        <button role="button" id="flecha-izquierda" class="left-arrow"><i class="fas fa-angle-left"></i></button>
+        <div class="contenedor-carousel">
+            <div class="carousel" id="carousel">
+                <div class="card">1
+                    <div>
+                        <img 
+                            class="image" 
+                            src="./imagenes/watch.jpg" 
+                            alt="Reloj Samsung Watch 4">
+                        <a href="" class="content-product">
+                            <h4>Reloj Samsung Watch 4</h4>
+                            <div class="precio">
+                                <p>$ 1200</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">2
+                    <div>
+                        <img 
+                            class="image" 
+                            src="./imagenes/aspiradora_robot.jpg" 
+                            alt="Aspiradora Robot Gadnic X550 Trapeadora 3 Modos 150m2 Aspira Trapea Pule">
+                        <a href="" class="content-product">
+                            <h4>Aspiradora Robot Gadnic X550 Trapeadora 3 Modos 150m2 Aspira Trapea Pule</h4>
+                            <div class="precio">
+                                <p>$ 36.000</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">3
+                    <div>
+                        <img 
+                            class="image" 
+                            src="./imagenes/auriculares.webp" 
+                            alt="Auriculares Gadnic A700 Play Gamer Compatible Consolas">
+                        <a href="" class="content-product">
+                            <h4>Auriculares Gadnic A700 Play Gamer Compatible Consolas</h4>
+                            <div class="precio">
+                                <p>$ 5.499</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">4
+                    <div>
+                        <img 
+                            class="image" 
+                            src="./imagenes/monitor.webp" 
+                            alt="Monitor Samsung F390 24 Curvo Full HD 60Hz Gamer">
+                        <a href="" class="content-product">
+                            <h4>Monitor Samsung F390 24 Curvo Full HD 60Hz Gamer</h4>
+                            <div class="precio">
+                                <p>$28.499</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">5
+                    <div>
+                        <img 
+                            class="image" 
+                            src="./imagenes/masajeador.webp" 
+                            alt="Masajeador Gadnic Ombu Cervical y Lumbar Shiatsu Terapia de Calor">
+                        <a href="" class="content-product">
+                            <h4>Masajeador Gadnic Ombu Cervical y Lumbar Shiatsu Terapia de Calor</h4>
+                            <div class="precio">
+                                <p>$5.999</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">6
+                    <div>
+                        <img class="image" src="./imagenes/watch.jpg" alt="Descripcion de la imagen">
+                        <a href="" class="content-product">
+                            <h4>Reloj Samsung Watch 4</h4>
+                            <div class="precio">
+                                <p>$ 1200</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">7
+                    <div>
+                        <img class="image" src="./imagenes/aspiradora_robot.jpg" alt="Descripcion de la imagen">
+                        <a href="" class="content-product">
+                            <h4>Aspiradora Robot Gadnic X550 Trapeadora 3 Modos 150m2 Aspira Trapea Pule</h4>
+                            <div class="precio">
+                                <p>$ 36.000</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">8
+                    <div>
+                        <img 
+                            class="image" 
+                            src="https://www.bidcom.com.ar/publicacionesML/productos/ABLUE039/1000x1000-ABLUE039.jpg" 
+                            alt="Auriculares Gadnic A700 Play Gamer Compatible Consolas">
+                        <a href="" class="content-product">
+                            <h4>Auriculares Gadnic A700 Play Gamer Compatible Consolas</h4>
+                            <div class="precio">
+                                <p>$ 5.499</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">9
+                    <div>
+                        <img 
+                            class="image" 
+                            src="./imagenes/watch.jpg" 
+                            alt="Reloj Samsung Watch 4">
+                        <a href="" class="content-product">
+                            <h4>Reloj Samsung Watch 4</h4>
+                            <div class="precio">
+                                <p>$ 1200</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">10
+                    <div>
+                        <img 
+                            class="image" 
+                            src="./imagenes/aspiradora_robot.jpg" 
+                            alt="Aspiradora Robot Gadnic X550 Trapeadora 3 Modos 150m2 Aspira Trapea Pule">
+                        <a href="" class="content-product">
+                            <h4>Aspiradora Robot Gadnic X550 Trapeadora 3 Modos 150m2 Aspira Trapea Pule</h4>
+                            <div class="precio">
+                                <p>$ 36.000</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">11
+                    <div>
+                        <img 
+                            class="image" 
+                            src="./imagenes/auriculares.webp" 
+                            alt="Auriculares Gadnic A700 Play Gamer Compatible Consolas">
+                        <a href="" class="content-product">
+                            <h4>Auriculares Gadnic A700 Play Gamer Compatible Consolas</h4>
+                            <div class="precio">
+                                <p>$ 5.499</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">12
+                    <div>
+                        <img 
+                            class="image" 
+                            src="./imagenes/monitor.webp" 
+                            alt="Monitor Samsung F390 24 Curvo Full HD 60Hz Gamer">
+                        <a href="" class="content-product">
+                            <h4>Monitor Samsung F390 24 Curvo Full HD 60Hz Gamer</h4>
+                            <div class="precio">
+                                <p>$28.499</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">13
+                    <div>
+                        <img 
+                            class="image" 
+                            src="./imagenes/masajeador.webp" 
+                            alt="Masajeador Gadnic Ombu Cervical y Lumbar Shiatsu Terapia de Calor">
+                        <a href="" class="content-product">
+                            <h4>Masajeador Gadnic Ombu Cervical y Lumbar Shiatsu Terapia de Calor</h4>
+                            <div class="precio">
+                                <p>$5.999</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">14
+                    <div>
+                        <img class="image" src="./imagenes/watch.jpg" alt="Descripcion de la imagen">
+                        <a href="" class="content-product">
+                            <h4>Reloj Samsung Watch 4</h4>
+                            <div class="precio">
+                                <p>$ 1200</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">15
+                    <div>
+                        <img class="image" src="./imagenes/aspiradora_robot.jpg" alt="Descripcion de la imagen">
+                        <a href="" class="content-product">
+                            <h4>Aspiradora Robot Gadnic X550 Trapeadora 3 Modos 150m2 Aspira Trapea Pule</h4>
+                            <div class="precio">
+                                <p>$ 36.000</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">16
+                    <div>
+                        <img 
+                            class="image" 
+                            src="https://www.bidcom.com.ar/publicacionesML/productos/ABLUE039/1000x1000-ABLUE039.jpg" 
+                            alt="Auriculares Gadnic A700 Play Gamer Compatible Consolas">
+                        <a href="" class="content-product">
+                            <h4>Auriculares Gadnic A700 Play Gamer Compatible Consolas</h4>
+                            <div class="precio">
+                                <p>$ 5.499</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">17
+                    <div>
+                        <img 
+                            class="image" 
+                            src="./imagenes/watch.jpg" 
+                            alt="Reloj Samsung Watch 4">
+                        <a href="" class="content-product">
+                            <h4>Reloj Samsung Watch 4</h4>
+                            <div class="precio">
+                                <p>$ 1200</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">18
+                    <div>
+                        <img 
+                            class="image" 
+                            src="./imagenes/aspiradora_robot.jpg" 
+                            alt="Aspiradora Robot Gadnic X550 Trapeadora 3 Modos 150m2 Aspira Trapea Pule">
+                        <a href="" class="content-product">
+                            <h4>Aspiradora Robot Gadnic X550 Trapeadora 3 Modos 150m2 Aspira Trapea Pule</h4>
+                            <div class="precio">
+                                <p>$ 36.000</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">19
+                    <div>
+                        <img 
+                            class="image" 
+                            src="./imagenes/auriculares.webp" 
+                            alt="Auriculares Gadnic A700 Play Gamer Compatible Consolas">
+                        <a href="" class="content-product">
+                            <h4>Auriculares Gadnic A700 Play Gamer Compatible Consolas</h4>
+                            <div class="precio">
+                                <p>$ 5.499</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">20
+                    <div>
+                        <img 
+                            class="image" 
+                            src="./imagenes/monitor.webp" 
+                            alt="Monitor Samsung F390 24 Curvo Full HD 60Hz Gamer">
+                        <a href="" class="content-product">
+                            <h4>Monitor Samsung F390 24 Curvo Full HD 60Hz Gamer</h4>
+                            <div class="precio">
+                                <p>$28.499</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">21
+                    <div>
+                        <img 
+                            class="image" 
+                            src="./imagenes/masajeador.webp" 
+                            alt="Masajeador Gadnic Ombu Cervical y Lumbar Shiatsu Terapia de Calor">
+                        <a href="" class="content-product">
+                            <h4>Masajeador Gadnic Ombu Cervical y Lumbar Shiatsu Terapia de Calor</h4>
+                            <div class="precio">
+                                <p>$5.999</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">22
+                    <div>
+                        <img class="image" src="./imagenes/watch.jpg" alt="Descripcion de la imagen">
+                        <a href="" class="content-product">
+                            <h4>Reloj Samsung Watch 4</h4>
+                            <div class="precio">
+                                <p>$ 1200</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">23
+                    <div>
+                        <img class="image" src="./imagenes/aspiradora_robot.jpg" alt="Descripcion de la imagen">
+                        <a href="" class="content-product">
+                            <h4>Aspiradora Robot Gadnic X550 Trapeadora 3 Modos 150m2 Aspira Trapea Pule</h4>
+                            <div class="precio">
+                                <p>$ 36.000</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">24
+                    <div>
+                        <img 
+                            class="image" 
+                            src="https://www.bidcom.com.ar/publicacionesML/productos/ABLUE039/1000x1000-ABLUE039.jpg" 
+                            alt="Auriculares Gadnic A700 Play Gamer Compatible Consolas">
+                        <a href="" class="content-product">
+                            <h4>Auriculares Gadnic A700 Play Gamer Compatible Consolas</h4>
+                            <div class="precio">
+                                <p>$ 5.499</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">25
+                    <div>
+                        <img 
+                            class="image" 
+                            src="./imagenes/watch.jpg" 
+                            alt="Reloj Samsung Watch 4">
+                        <a href="" class="content-product">
+                            <h4>Reloj Samsung Watch 4</h4>
+                            <div class="precio">
+                                <p>$ 1200</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">26
+                    <div>
+                        <img 
+                            class="image" 
+                            src="./imagenes/aspiradora_robot.jpg" 
+                            alt="Aspiradora Robot Gadnic X550 Trapeadora 3 Modos 150m2 Aspira Trapea Pule">
+                        <a href="" class="content-product">
+                            <h4>Aspiradora Robot Gadnic X550 Trapeadora 3 Modos 150m2 Aspira Trapea Pule</h4>
+                            <div class="precio">
+                                <p>$ 36.000</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">27
+                    <div>
+                        <img 
+                            class="image" 
+                            src="./imagenes/auriculares.webp" 
+                            alt="Auriculares Gadnic A700 Play Gamer Compatible Consolas">
+                        <a href="" class="content-product">
+                            <h4>Auriculares Gadnic A700 Play Gamer Compatible Consolas</h4>
+                            <div class="precio">
+                                <p>$ 5.499</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">28
+                    <div>
+                        <img 
+                            class="image" 
+                            src="./imagenes/monitor.webp" 
+                            alt="Monitor Samsung F390 24 Curvo Full HD 60Hz Gamer">
+                        <a href="" class="content-product">
+                            <h4>Monitor Samsung F390 24 Curvo Full HD 60Hz Gamer</h4>
+                            <div class="precio">
+                                <p>$28.499</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">29
+                    <div>
+                        <img 
+                            class="image" 
+                            src="./imagenes/masajeador.webp" 
+                            alt="Masajeador Gadnic Ombu Cervical y Lumbar Shiatsu Terapia de Calor">
+                        <a href="" class="content-product">
+                            <h4>Masajeador Gadnic Ombu Cervical y Lumbar Shiatsu Terapia de Calor</h4>
+                            <div class="precio">
+                                <p>$5.999</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">30
+                    <div>
+                        <img class="image" src="./imagenes/watch.jpg" alt="Descripcion de la imagen">
+                        <a href="" class="content-product">
+                            <h4>Reloj Samsung Watch 4</h4>
+                            <div class="precio">
+                                <p>$ 1200</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">31
+                    <div>
+                        <img class="image" src="./imagenes/aspiradora_robot.jpg" alt="Descripcion de la imagen">
+                        <a href="" class="content-product">
+                            <h4>Aspiradora Robot Gadnic X550 Trapeadora 3 Modos 150m2 Aspira Trapea Pule</h4>
+                            <div class="precio">
+                                <p>$ 36.000</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">32
+                    <div>
+                        <img 
+                            class="image" 
+                            src="https://www.bidcom.com.ar/publicacionesML/productos/ABLUE039/1000x1000-ABLUE039.jpg" 
+                            alt="Auriculares Gadnic A700 Play Gamer Compatible Consolas">
+                        <a href="" class="content-product">
+                            <h4>Auriculares Gadnic A700 Play Gamer Compatible Consolas</h4>
+                            <div class="precio">
+                                <p>$ 5.499</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button role="button" id="flecha-derecha" class="right-arrow"><i class="fas fa-angle-right"></i></button>
+    </div>
+    
+    <script src="./carrousel.js"></script>
+</body>
+</html>

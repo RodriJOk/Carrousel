@@ -1,0 +1,148 @@
+/*base styles for the document*/
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #ffffff;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	font-family: arial, sans-serif;
+	background-color: #d9c58b;
+  }
+  
+  #container {
+	width: 700px;
+	height: auto;
+	border-radius: 10px;
+	display: grid;
+	place-items: center;
+	background-color: #ffffff;
+	overflow: hidden;
+	padding: 50px 0px;
+  }
+  
+  #slider {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+  }
+  
+  #placer {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 2;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+  }
+  
+  /* styles for the slide */
+  #slide {
+	display: flex;
+	flex-direction: row;
+	transition: all 0.5s ease-in-out;
+  }
+  
+  /**** styles for the cards *****/
+  /* styles for the cards */
+  .content-card {
+	height: 187px;
+	width: 120px;
+	margin-right: 10px;
+	border-radius: 10px;
+	box-shadow: 0px 2px 2px #cccccc;
+	border: 1px solid #e8e8e8;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+  }
+  
+  /* styles for the poster div inside the card*/
+  .poster {
+	height: 120px;
+	width: 100%;
+	background-color: #f2a172;
+	border-radius: 10px 10px 0px 0px;
+	display: grid;
+	place-items: center;
+	font-size: 26px;
+	font-weight: bold;
+	color: white;
+  }
+  
+  .alt .poster {
+	background-color: #a4b3bf;
+  }
+  
+  .content-card:first-child {
+	margin-left: 10px;
+  }
+  /* remove right margin from last content-card */
+  .content-card:last-child {
+	margin-right: 0px;
+  }
+  
+  .name {
+	padding: 10px 15px 0px 15px;
+	font-size: 14px;
+  }
+  .year {
+	margin-top: 5px;
+	color: grey;
+  }
+  
+  /* styles for next and previous buttons */
+  #next-button {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	right: 10px;
+	background: #ffffff;
+	height: 54px;
+	width: 54px;
+	border-radius: 50%;
+	opacity: 0.9;
+	cursor: pointer;
+	color: grey;
+  }
+  
+  #next-button:hover {
+	color: black;
+  }
+  
+  #next-button::after {
+	content: ">";
+	font-size: 20px;
+  }
+  
+  #previous-button {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 10px;
+	background: #ffffff;
+	height: 54px;
+	width: 54px;
+	border-radius: 50%;
+	opacity: 0.9;
+	cursor: pointer;
+	color: grey;
+  }
+  
+  #previous-button:hover {
+	color: black;
+  }
+  
+  #previous-button::after {
+	content: "<";
+	font-size: 20px;
+  }
+  
