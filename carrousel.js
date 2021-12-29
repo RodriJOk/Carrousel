@@ -12,6 +12,13 @@ let cantidadDesplazamientoEnCelusMediano = 1.5;
 let cantidadDesplazamientoEnDesktop = 3;
 let viewportWidth = window.innerWidth;
 
+if(card.length < 4){
+    console.log("No se puede desplazar");
+    flechaIzquierda.style.display = "none";
+    flechaDerecha.style.display = "none";    
+}
+
+
 flechaIzquierda.addEventListener("click", moverIzquierda);
 flechaDerecha.addEventListener("click", moverDerecha);
 
