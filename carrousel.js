@@ -94,23 +94,3 @@ const mover = (e) => {
 	slide.addEventListener('mouseup', final);
 	slide.addEventListener('touchend', final);
 })();
-// if(viewportWidth > 800) {
-//     for(let i = 0; i < cantidadDesplazamientoEnDesktop; i++) {
-//         slide.insertAdjacentElement('beforeend', primerElementoDeLasCards);
-//         card = document.querySelectorAll('.card');
-//         primerElementoDeLasCards = card[0];
-//         ultimoElementoDeLasCards = card[card.length - 1];
-//     }
-// }else if(viewportWidth > 400 && viewportWidth < 799) {
-//     for(let i = 0; i < cantidadDesplazamientoEnCelusMediano; i++) {
-//         slide.insertAdjacentElement('beforeend', primerElementoDeLasCards);
-//         card = document.querySelectorAll('.card');
-//         primerElementoDeLasCards = card[0];
-//     }
-// }else{
-//     for(let i = 0; i < cantidadDesplazamientoEnCelusPequeño; i++) {
-//         slide.insertAdjacentElement('beforeend', primerElementoDeLasCards);
-//         card = document.querySelectorAll('.card');
-//         primerElementoDeLasCards = card[0];
-//     }
-// }
